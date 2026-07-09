@@ -169,3 +169,20 @@ const favoriteFoods = (
 );
 
 root.render(favoriteFoods);
+
+// Using .map() to Render JSX
+
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+const container = document.getElementById('app');
+const root = createRoot(container);
+const people = ['Rowe', 'Prevost', 'Gare'];
+
+const peopleList = people.map(person =>
+  // expression goes here:
+  <li>{person}</li>
+);
+
+// root.render goes here:
+root.render(<ul>{peopleList}</ul>);
