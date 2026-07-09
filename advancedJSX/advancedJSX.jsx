@@ -186,3 +186,20 @@ const peopleList = people.map(person =>
 
 // root.render goes here:
 root.render(<ul>{peopleList}</ul>);
+
+// Keys in JSX Lists
+
+import React from "react";
+import { createRoot } from "react-dom/client";
+
+const container = document.getElementById("app");
+const root = createRoot(container);
+const people = ["Rowe", "Prevost", "Gare"];
+
+const peopleList = people.map((person, i) => (
+  // expression goes here:
+  <li key={"person_" + i}>{person}</li>
+));
+
+// root.render goes here:
+root.render(<ol>{peopleList}</ol>);
