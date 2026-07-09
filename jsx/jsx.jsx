@@ -25,3 +25,16 @@ const myDiv = (
     <h1>Hello world</h1>
   </div>
 );
+
+// JSX Outer Elements The first opening tag and the final closing tag of a JSX expression must belong to the same JSX element!
+
+const blog = (
+  <div>
+    <img src="pics/192940u73.jpg" />
+    <h1>Welcome to Dan's Blog!</h1>
+    <article>
+      Wow I had the tastiest sandwich today. I <strong>literally</strong> almost
+      freaked out.
+    </article>
+  </div>
+);
