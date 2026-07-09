@@ -38,3 +38,16 @@ root.render(<h1>{2 + 3}</h1>)
 
 // Will result in the following being rendered to the screen: <h1>5</h1>
 // Whereas without the curly braces, it would render <h1>2 + 3</h1> to the screen.
+
+
+// Variable in JSX
+
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+
+const container = document.getElementById('app');
+const root = createRoot(container);
+
+const theBestString = 'This text was accessed through a javascript variable';
+
+root.render(<h1>{theBestString}</h1>);
